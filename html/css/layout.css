@@ -1,0 +1,559 @@
+.device-mockup.macbook>.device {
+    background-image: url(macbook/macbook-wh.png);
+}
+
+
+/******************** 00 공통레이아웃 ***********************/
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+*{
+  margin:0;
+  padding:0;
+}
+
+ol,ul,dl{
+  list-style:none;
+}
+
+html{
+  font-family:'Noto Sans KR', sans-serif;
+}
+
+.row{
+  margin:0;
+}
+
+.btn-gruop{
+  width:100%;
+}
+
+.btn-gruop a{
+  margin-right:2px;
+  display: inline-block;
+}
+
+
+
+/******************** 헤더 *******************************/
+header{
+  background-color:#000;
+}
+
+
+/************************** 01 어바웃 영역 ****************/
+#about .education p,
+#about .license p,
+#about .career p,
+#about .skill > p,
+#about .text-left p{
+  font-family: 'Montserrat';
+  margin-bottom:6px;
+}
+
+#about .about-right{
+  padding-left:50px;
+}
+#about .face{
+  padding: 0 0 20px 0;
+}
+#about .face img{}
+#about .text-left{
+  width:100%;
+}
+#about .text-left h1,
+#about .text-left p:nth-child(2){
+  font-size:36px;
+}
+#about .row .text-left p:nth-child(3){
+  font-size:14px;
+}
+#about .row .text-left p:nth-child(3) span{
+  color: #eee;
+  margin:0 6px;
+}
+#about .row .text-left p span{
+  color: #aaa;
+}
+
+#about .education p,
+#about .license p,
+#about .career p,
+#about .skill > p{
+  font-size:16px;
+  font-weight:600;
+  color:#333;
+}
+
+#about .education,
+#about .license,
+#about .career,
+#about .skill{
+  padding-bottom:30px;
+}
+
+/* 경력 */
+#about .career p span{
+  font-family:'Noto Sans KR', sans-serif;
+  font-size:14px;
+  font-weight:300;
+}
+
+#about .about-tb{
+  color:#666;
+}
+#about .about-tb tr th{
+  font-style:14px;
+  padding-right:16px;
+  font-weight:400;
+}
+#about .about-tb tr td{
+  font-weight:300;
+}
+
+#about .career p span,
+#about .about-tb tr td span{
+  color:#4173f6;
+  padding-left:4px;
+}
+
+/* 스킬 */
+#about .skill{}
+#about .skill ul{
+}
+#about .skill li{
+  height:14.285%;
+}
+#about .skill li p{
+  display:inline-block;
+}
+#about .skill li p:nth-child(1){
+  padding-right:10px;
+  width:22%;
+  font-weight:400;
+  color:#666;
+}
+#about .skill li p:nth-child(3){
+  padding-left:10px;
+  width:6%;
+  color:#888;
+}
+
+#about .skill li > span{
+  display:inline-block;
+  width:70%;
+  height:10px;
+  background-color:#f2f2f2;
+}
+
+#about .skill li > span span{
+  display:block;
+  background-color:#4173f6;
+  height:10px;
+
+}
+
+#about .skill li:nth-child(1) span span,
+#about .skill li:nth-child(2) span span{
+  width:70%;
+  animation: skillAni-01 3s 1;
+}
+
+#about .skill li:nth-child(3) span span,
+#about .skill li:nth-child(4) span span{
+  width:50%;
+  animation: skillAni-02 3s 1;
+}
+
+#about .skill li:nth-child(5) span span{
+  width:80%;
+  animation: skillAni-03 3s 1;
+}
+
+#about .skill li:nth-child(6) span span,
+#about .skill li:nth-child(7) span span{
+  width:90%;
+  animation: skillAni-04 3s 1;
+}
+
+/* 03 포트폴리오 영역 */
+#work .item{
+  background-color:#f2f2f2;
+}
+.project-details{
+width: 85%;
+}
+
+.portfolio-carousel .item .project-details .project-name {
+  margin-bottom: 0;
+}
+.portfolio-carousel .item .project-details span{
+    font-family:'Noto Sans KR', sans-serif;
+    color:#666;
+}
+
+.portfolio-carousel .item .project-details span:nth-child(2){
+  font-size:16px;
+  font-weight:400;
+  padding-bottom:50px;
+}
+
+.portfolio-carousel .item .project-details span:nth-child(3){
+  width: 82%;
+  font-size:16px;
+  font-weight:300;
+  padding-bottom:50px;
+  line-height:1.5;
+}
+
+.btn-outline-light{
+  background-color:#000;
+  color:#fff;
+  font-weight:300;
+  min-width:200px;
+  margin-bottom:3px;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus{
+  background-color:#333;
+  color:#fff;
+}
+
+.owl-theme .owl-controls {
+    margin:0;
+}
+
+
+
+/* 04 리디자인영역 */
+#redesign{
+  width:100%;
+}
+
+#redesign .row{}
+#redesign .row .col-md-4{
+  position:relative;
+}
+#redesign .row > div{}
+#redesign .row > div img{
+  display:block;
+  width:100%;
+  height:100%;
+  /* width:568px;
+  height:827px; */
+}
+
+.col-md-4{
+  padding: 0;
+}
+
+.hover-box{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0, 0, 0, 0.7);
+  text-align: center;
+  display:none;
+  border:solid 1px;
+  border-color:rgba(0, 0, 0, 0.7);
+
+}
+
+.hover-text{
+  position:absolute;
+  top:30%;
+  left:0;
+  width:100%;
+  color:#fff;
+}
+.hover-text h3{
+  font-family:Montserrat;
+  font-weight:600;
+}
+.hover-text p:nth-child(2){
+  color:#aaa;
+  margin-bottom:30px;
+  font-weight:400;
+}
+.hover-text p:nth-child(3){
+  margin-bottom:30px;
+}
+
+.hover-text a{
+  display: block;
+  margin:0 auto;
+  background-color:#000;
+  color:#fff;
+  font-weight:300;
+  max-width:200px;
+  margin-bottom:3px;
+  border:0;
+}
+
+#redesign .row .col-md-4:hover .hover-box{
+  display: block;
+}
+
+#redesign .row .rede03:hover .hover-box{
+  left:-1px;
+}
+
+
+
+/*********** 05 디자인영역 ***************/
+/* 디자인 공통 */
+#design .project-details{
+  padding:8% 0;
+}
+
+
+
+/* 제주항공 */
+.container-fluid{
+  padding:0;
+}
+#design .item{
+  padding:0;
+  background-color:#ff5000;
+}
+
+#design .item .col-md-5{
+  padding: 105px 0px 105px 55px;
+}
+
+#design .project-details span{
+    font-family:'Noto Sans KR', sans-serif;
+    color:#fff;
+}
+
+#design.project-details span:nth-child(2){
+  font-weight:400;
+}
+
+#design.project-details span:nth-child(2),
+#design .project-details span:nth-child(3){
+  font-size:16px;
+  padding-bottom:50px;
+  line-height:1.5;
+}
+
+#design .project-details span:nth-child(3){
+  font-weight:300;
+}
+
+
+#design .project-details .tool-img{
+  padding-top: 100px;
+}
+
+#design .project-details .tool-img{
+  width:100%;
+  display: block;
+}
+#design .jeju .project-details{
+  content:"";
+  display: block;
+  clear:both;
+}
+
+#design .project-details .col-sm-4{
+  padding: 0;
+  margin-left: 4px;
+}
+
+
+
+
+/* 리뮤 */
+#design .limu{
+  /* background-image:url("/img/add/limu.jpg"); */
+  background-color:#79a6d8;
+}
+#design .limu .project-details span:nth-child(2){
+  font-weight:400;
+}
+
+
+/* 율랜드 */
+#design .yulland{
+  /* background-image:url("/img/add/yul-lend.jpg"); */
+  background-color:#f7e1b5;
+}
+#design .yulland .project-name{
+  font-family:'Noto Sans KR', sans-serif;
+  letter-spacing: 5px;
+  color:#333;
+}
+#design .yulland .project-name span{
+  color:#fff;
+}
+
+#design .yulland .project-details span:nth-child(2){
+  color:#666;
+  font-weight:400;
+}
+
+#design .yulland .project-details span:nth-child(3){
+  font-size:16px;
+  padding-bottom:50px;
+  line-height:1.5;
+  color:#666;
+}
+
+
+/* 카페콩바 */
+#design .kongba{
+  background-color:#FFC703;
+}
+#design .kongba .col-md-5{
+  padding:0;
+}
+#design .kongba .row{
+  padding: 105px 0px 105px 55px;
+}
+#design .kongba .project-name{
+  color:#333;
+}
+#design .kongba .project-details span:nth-child(2){
+  color:#666;
+  font-weight:400;
+}
+#design .kongba .project-details span:nth-child(3){
+  color:#666;
+}
+
+#design .kongba .logo-img{
+  width:70%;
+  height:100%;
+  margin:0 auto;
+}
+#design .kongba .logo-img:after{
+  content:"";
+  display: block;
+  clear: both;
+}
+#design .kongba .logo-img li{
+  width:50%;
+  float: left;
+  padding:0 4px;
+}
+#design .kongba .logo-img li img{
+  width:100%;
+}
+#design .kongba .logo-img li p{
+  color:#333;
+  margin-top:6px;
+  font-weight:500;
+  text-align: right;
+}
+#design .kongba .cafe-img{
+  width:70%;
+  height:22em;
+  margin:0 auto;
+  background-color:#fff;
+}
+#design .kongba .cafe-img img{
+  display: block;
+  width:100%;
+  height:100%;
+}
+
+
+
+/* 커넥트 */
+#contact {
+  background-color:#f2f2f2;
+}
+
+#contact .container .row{
+ padding: 5% 0;
+}
+
+#contact .cont-left .qrcode{
+  width:20em;
+  margin:0 auto;
+  padding-top:40px;
+}
+
+#contact .cont-left .qrcode img{
+  width:100%;
+  display: block;
+}
+#contact .cont-left .qrcode p{
+  text-align: center;
+  color:#aaa;
+}
+
+
+#contact h1{
+  font-family: 'Montserrat';
+  font-weight:700;
+  text-align:left;
+  margin: 0;
+  padding-bottom:50px;
+}
+#contact .cont-right .my-info{
+  padding-bottom:50px;
+}
+#contact .cont-right .my-info .cont-tb{}
+#contact .cont-right .my-info .cont-tb tr{
+  line-height:2.5;
+}
+#contact .cont-right .my-info .cont-tb tr th{
+  width:30%;
+  font-weight:400;
+  color:#666;
+}
+#contact .cont-right .my-info .cont-tb tr td{
+  width:60%;
+}
+
+#contact .cont-right .btn i{
+  font-size:16px;
+  margin-right:6px;
+}
+
+/*************************** 푸터 *********************************/
+footer.footer{
+  background-color:#333;
+}
+.footer .text-center .row .col-lg-12 .small{
+  margin:0;
+}
+.footer .text-center .row .col-lg-12 .small:nth-child(2){
+  font-size:12px;
+  color:#666;
+}
+
+
+/************************* 모달갤러리 ******************************/
+.ekko-lightbox-nav-overlay a span{
+  color:#f2f2f2 !important;
+}
+.ekko-lightbox .modal-footer{
+  text-align: right !important;
+}
+
+
+
+
+/***************************** 키프레임 애니메이션 ***********************/
+@keyframes skillAni-01 {
+  0% {width: 10%;}
+  100% {width: 70%;}
+}
+@keyframes skillAni-02 {
+  0% {width: 10%;}
+  100% {width: 50%;}
+}
+@keyframes skillAni-03 {
+  0% {width: 10%;}
+  100% {width: 80%;}
+}
+@keyframes skillAni-04 {
+  0% {width: 10%;}
+  100% {width: 90%;}
+}

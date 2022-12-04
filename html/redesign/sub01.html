@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>폴바셋 리디자인</title>
+  <link rel="stylesheet" href="../css/sub01.css">
+
+  <!-- 슬릭슬라이더 -->
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header class="header">
+      <div class="header-top">
+          <h1><a href="#"><img src="../img/rede/01/logo.png" alt="로고이미지"></a></h1>
+          <ul class="util-menu">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">문의하기</a></li>
+            <li><a href="#">채용</a></li>
+            <li><a href="#">자주하는 질문</a></li>
+          </ul>
+      </div>
+      <nav class="main-nav">
+        <div class="fake"></div>
+        <ul>
+          <li>
+            <a href="#">ABOUT US</a>
+            <ul class="main-nav-depth02">
+              <li><a href="#">브랜드</a></li>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">CSR</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">MENU</a>
+            <ul class="main-nav-depth02">
+              <li><a href="#">커피</a></li>
+              <li><a href="#">음료</a></li>
+              <li><a href="#">아이스크림</a></li>
+              <li><a href="#">디저트</a></li>
+              <li><a href="#">상품</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">STORE</a>
+            <ul class="main-nav-depth02">
+              <li><a href="">매장찾기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">SOCIETY</a>
+            <ul class="main-nav-depth02">
+              <li><a href="">멤버십</a></li>
+              <li><a href="">회원 등급 혜택</a></li>
+              <li><a href="">e-Card 선물</a></li>
+              <li><a href="">모바일 App 안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">WHAT'S NEW</a>
+            <ul class="main-nav-depth02">
+              <li><a href="">이벤트/뉴스</a></li>
+              <li><a href="">공지사항</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">E-SHOP</a>
+            <ul class="main-nav-depth02">
+              <li><a href="">E-SHOP 소개</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="top_srch_area">
+            <div class="srch_box">
+                <input type="text" name="keyword" id="keyword" placeholder="검색어를 입력해주세요">
+                <button type="submit"></button>
+            </div>
+        </div>
+      </nav>
+</header>
+
+
+<!-- 메인배너 -->
+<section class="main-banner">
+    <div class="single-item">
+      <div class="banner banner02">
+        <div class="text-box">
+          <b>매일매일 Milk Day</b><p>폴 바셋 X 매일우유 디저트</p>
+          <button>VIEW</button>
+        </div>
+        <a href="#"><img src="../img/rede/01/main-banner02.jpg" alt="메인배너이미지02"></a>
+      </div>
+      <div class="banner banner01">
+        <div class="text-box">
+          <b>봄을담은 제주말차</b><p>부드러운 제주 말차와 상하목장 아이스크림</p>
+          <button>VIEW</button>
+        </div>
+        <a href="#"><img src="../img/rede/01/main-banner01.jpg" alt="메인배너이미지01"></a>
+      </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- 제이쿼리 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+
+<!-- 슬릭슬라이더 -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!-- 스크립트 -->
+<script>
+$(document).ready(function(){
+
+  $('.single-item').slick({
+  infinite : true,
+  autoplay : true,
+  autoplaySpeed : 3000,
+  arrows : false,
+});
+
+});
+</script>
+
+</body>
+</html>

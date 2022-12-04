@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+
+/***  1024px  ***/
+@media screen and (max-width : 1024px){
+  body{
+    width:100%;
+  }
+  section{
+    padding:80px 0;
+  }
+  .item{
+    padding:80px 0;
+  }
+  .project-details .btn{
+    min-width:160px;
+  }
+  .hover-box a{
+    max-width:160px;
+  }
+  .btn-gruop a{
+    margin-right:34px;
+  }
+  .item .project-details{
+    width:100%;
+  }
+  .brand-name{
+    font-size:20em;
+  }
+  .brand-name-subtext{
+    font-size:10em;
+  }
+  #about .text-left h1,
+  #about .text-left p:nth-child(2){
+    font-size:2em;
+  }
+  #about .about-right{
+    padding-left: 30px;
+  }
+  #about .about-right table{
+    font-size:11px;
+  }
+  #about .about-tb tr{
+    line-height:2;
+  }
+  #about .skill li p:nth-child(1){
+    width:22%;
+    font-size:11px;
+  }
+  #about .skill li p:nth-child(3){
+    font-size:11px;
+  }
+  #about .skill li > span{
+    width:66%;
+  }
+  #about .skill{
+    padding:0;
+  }
+  #work .project-name{
+    font-size:2em;
+    padding-bottom:10px;
+  }
+  #work .project-details span:nth-child(3){
+    font-size:1em;
+    width: 100%;
+  }
+  #work .device-container{
+    padding: 90px 0;
+  }
+  #redesign .hover-text{
+    top:20%;
+  }
+  #design .project-name{
+    font-size:2em;
+    padding-bottom:10px;
+  }
+  #design .item .col-md-5{
+    padding:80px 0px 80px 40px;
+  }
+  #design .project-details .btn{}
+  #design .item  .project-details span:nth-child(3){
+    width:100%;
+  }
+  #design .kongba .row .col-md-5{
+    padding:0;
+  }
+  #design .kongba .logo-img,
+  #design .kongba .cafe-img{
+    width:80%;
+  }
+  #contact .cont-right h1{
+    font-size:3em;
+    padding-bottom:30px;
+  }
+}
+
+
+/***  768px  ***/
+@media screen and (max-width : 768px){
+  body{
+    width:100%;
+  }
+  #about .about-left{
+    display: flex;
+    padding-bottom:30px;
+  }
+  #about .text-left{
+    padding:100px 0 0 20px;
+    width:80%;
+    height: 100%;
+  }
+  #about .about-right:after{
+    content:"";
+    display:block;
+    clear: both;
+  }
+  #about .education{
+    float:left;
+    width:78%;
+  }
+  #about .skill li > span{
+    width:70%;
+  }
+  #work .project-name{
+    color:#333;
+    font-weight:600;
+  }
+  #design .project-name{
+   color:#fff;
+   font-weight:600;
+  }
+  #design .item .col-md-7{
+    padding-bottom:80px;
+  }
+  #design .item .col-md-5{
+    padding: 80px 0 0 0;
+  }
+  #design .btn-gruop{
+    margin:0 auto;
+    width: 22%;
+  }
+  .btn-gruop a{
+    margin:0;
+  }
+  #design .col-md-5{
+    position:relative;
+  }
+  #design .tool-img{
+    position: absolute;
+    width:6%;
+    height:6%;
+    top:5%;
+    left:90%;
+  }
+  #design .tool-img img{
+    width:100%;
+  }
+  #design .kongba .row{
+    padding:0;
+  }
+  #design .kongba .cafe-img{
+    display: none;
+  }
+  #design .kongba .row .col-md-5{
+    padding-top: 80px;
+  }
+  #contact .cont-left .qrcode{
+    width:10em;
+    margin:0;
+    padding:0 0 70px 0;
+  }
+  #contact .cont-left .qrcode p{
+    font-size:10px;
+    text-align: left;
+  }
+}
+
+/**** 320px ****/
+@media screen and (max-width : 320px){
+  body{
+    overflow-x: hidden;  /* 이거 넣어도 되는지? */
+    width:100%;
+  }
+  section{
+    padding:40px 0;
+  }
+  header .brand-name{
+    font-size:2em;
+    line-height:1.5;
+    padding:0;
+  }
+  header .brand-name-subtext{
+    font-size:1em;
+  }
+  header .scroll-down .btn{
+    display:none;
+  }
+  #about .face{
+    padding:0;
+  }
+  #about .about-left{
+    display:block;
+    padding:0;
+  }
+  #about .about-left h1,
+  #about .about-left p:nth-child(2){
+    display:inline-block;
+  }
+  #about .about-left p:nth-child(2){
+    padding-left:10px;
+  }
+  #about .text-left{
+    padding:0 0 30px 0;
+    width:100%;
+  }
+  #about .about-right{
+    padding:0;
+  }
+  #about .education{
+    width:100%;
+  }
+  #about .skill li p:nth-child(1){
+    width:100%;
+  }
+  #about .skill li > span{
+    width:88%;
+  }
+  #design .item .col-md-5{
+    padding:80px 20px 0 20px;
+  }
+  .portfolio-carousel .item .project-details span:nth-child(2),
+  .portfolio-carousel .item .project-details span:nth-child(3),
+  #design .item .project-details span:nth-child(2),
+  #design .item .project-details span:nth-child(3){
+    font-size:14px;
+    line-height:1.5;
+  }
+  #design .btn-gruop{
+    width:100%;
+  }
+  #design .tool-img {
+    width: 10%;
+    height: 10%;
+    left: 85%;
+  }
+  #design .kongba .logo-img, #design .kongba .cafe-img{
+    width: 100%;
+  }
+  #contact .cont-right,
+  #contact .cont-left{
+    padding:0;
+  }
+  #contact .btn-outline-light{
+   min-width: 290px;
+  }
+
+
+
+}
